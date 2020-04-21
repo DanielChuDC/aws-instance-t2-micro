@@ -1,0 +1,39 @@
+{
+  "output_datatypes": [],
+  "template_input_params": [],
+  "template_output_params": [
+    {
+      "name": "ssh_key",
+      "type": "string",
+      "description": "ssh_key to login to the instance.",
+      "hidden": false,
+      "label": "ssh_key",
+      "secured": false,
+      "system": false,
+      "required": true,
+      "immutable": false
+    },
+    {
+      "name": "module_superman_ecs_public_ip",
+      "type": "string",
+      "description": "Instance public ip",
+      "hidden": false,
+      "label": "Instance's public ip",
+      "secured": false,
+      "system": false,
+      "required": true,
+      "immutable": false
+    },
+    {
+      "name": "module_superman_ecs_hostname",
+      "type": "string",
+      "description": "Instance's hostname",
+      "hidden": false,
+      "label": "Instance's hostname",
+      "secured": false,
+      "system": false,
+      "required": true,
+      "immutable": false
+    }
+  ]
+}

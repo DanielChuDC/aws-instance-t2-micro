@@ -1,0 +1,59 @@
+{
+  "name": "Single VM with t2.micro on AWS",
+  "description": "This template will deploy single t2.micro instance",
+  "version": "1.0",
+  "imageUrl": "https://github.com/DanielChuDC/aws-instance-t2-micro/imgs/aws.png",
+  "image": "https://github.com/DanielChuDC/aws-instance-t2-micro/imgs/aws.png",
+  "type": "prebuilt",
+  "status": "active",
+  "manifest": {
+    "template_type": "Terraform",
+    "template_format": "HCL",
+    "template_provider": "AWS",
+    "template": {
+      "templateData": "",
+      "templateVariables": "",
+      "templateOutput": ""
+    },
+    "template_source": {
+      "githubRepoUrl": "",
+      "githubAccessToken": "",
+      "relativePathToTemplateFolder": "",
+      "templateFileName": "terraform.tf"
+    }
+  },
+  "metadata": {
+    "displayName": "Single VM with t2.micro on AWS",
+    "providerDisplayName": "AWS",
+    "longDescription": "This template will deploy single t2.micro instance",
+    "bullets": [
+      {
+        "title": "Clouds",
+        "description": " AWS<br>"
+      },
+      {
+        "title": "Operating Systems Supported",
+        "description": "Ubuntu<br>"
+      },
+      {
+        "title": "Topology",
+        "description": "1 single t2.micro instance<br>"
+      },
+      {
+        "title": "Default Virtual Machine Settings",
+        "description": "1 vCPU , 1 Memory (GB), Boot Disk up to 30 (GB) <br>"
+      },
+      {
+        "title": "Usage and Special Notes",
+        "description": "1. The user is responsible for obtaining appropriate software licenses and downloads prior to template deployment.<br>2. See more information from  <a href='https://github.com/DanielChuDC/aws-instance-t2-micro'>terraform template </a><br>"
+      }
+    ],
+    "featuredImageUrl": "",
+    "imageUrl": "",
+    "mediumImageUrl": "",
+    "smallImageUrl": "",
+    "documentationUrl": "",
+    "termsUrl": "",
+    "media": []
+  }
+}
