@@ -1,0 +1,4 @@
+access_key="<your-access-key>"
+secret_key="<your-secret-key>"
+region="us-west-2" # Your region
+key_name="my-key" # key name

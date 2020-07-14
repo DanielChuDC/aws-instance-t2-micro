@@ -1,5 +1,6 @@
 provider "aws" {
   version = "~> 2.0"
+  // region= var.region
 }
 
 # Create tls private key
@@ -37,9 +38,9 @@ resource "aws_vpc" "my_vpc" {
   enable_dns_hostnames = true
   enable_dns_support   = true
 
-  tags {
-    Name = "superman-env"
-  }
+  // tags {
+  //   Name = "superman-env"
+  // }
 }
 
 # Create subnet in my_vpc

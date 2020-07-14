@@ -31,9 +31,9 @@ resource "aws_instance" "superman" {
   vpc_security_group_ids = ["${distinct(concat(aws_security_group.allow_http.*.id, var.extra_sgs))}"]
   key_name               = "${var.key_name}"
 
-  tags {
-    Name = "${var.name}"
-  }
+  // tags {
+  //   Name = "${var.name}"
+  // }
 
   # provisioner "remote-exec" {
   #   inline = [
@@ -74,9 +74,9 @@ variable "password" {}
 resource "aws_internet_gateway" "superman" {
   vpc_id = "${var.vpc_id}" //gateways.tf
 
-  tags {
-    Name = "superman-gw"
-  }
+  // tags {
+  //   Name = "superman-gw"
+  // }
 }
 
 ## //subnets.tf create route table 
@@ -88,9 +88,7 @@ resource "aws_route_table" "superman" {
     gateway_id = "${aws_internet_gateway.superman.id}"
   }
 
-  tags {
-    Name = "superman-route-table"
-  }
+
 }
 
 ## Create aws route table to route to the instance
